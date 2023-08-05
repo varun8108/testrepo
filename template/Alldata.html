@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("{% static 'image2.jpg' %}");
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <table style="border: 20px solid black; margin-left: auto; margin-right: auto;">
+        <thead>
+            <tr>
+            <th>
+                Image
+            </th>
+            <th>
+                Id
+            </th>
+            <th>
+               Name
+            </th>
+        </tr>
+        </thead>
+        {% for cols in data %}
+        <tr>
+            <td><img src="{% static cols.image %}" width="100px" height="100px"></td>
+            <td><a href="/single/{{cols.id}}">{{cols.id}}</td>
+            <td>{{cols.name}}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+        }
+        .Hello{
+            width: 50%;
+            border: 100px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="Hello">
+        <p>Id :{{data.id}}</p>
+        <p>Name:{{data.name}}</p>
+        <p>FatherName:{{data.father}}</p>
+        <p>Class:{{data.Class}}</p>
+        <p>Age:{{data.age}}</p>
+        </div>
+    </center>
+</body>
+</html>

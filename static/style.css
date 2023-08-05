@@ -1,0 +1,13 @@
+form{text-align: center;
+    color: aqua;
+    font-size: large;
+
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-image: url('image1.jpg');
+    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+}
